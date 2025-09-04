@@ -1,0 +1,76 @@
+
+/* General styling */
+body {
+  background: #121212;
+  color: #eee;
+  margin: 0;
+  padding-top: 80px;
+}
+
+/* Movie Card Layout */
+.movie-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 15px auto;
+  max-width: 1100px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(245, 197, 24, 0.5)
+}
+
+/* Poster */
+.movie-poster {
+  width: 100px;
+  height: 150px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+/* Details */
+.movie-details h2 {
+  margin: 0 0 8px;
+  color: #f5c518; /* IMDb Yellow */
+  font-size: 2rem;
+}
+
+.meta {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.desc {
+  margin-bottom: 10px;
+}
+
+.credits {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.actions button {
+  background: #f5c518;
+  border: none;
+  padding: 8px 14px;
+  margin: 5px 8px 0 0;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background: #d4a914;
+}
+

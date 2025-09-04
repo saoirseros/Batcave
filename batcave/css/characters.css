@@ -1,0 +1,86 @@
+.characters1 {
+  padding: 100px 80px;
+  background: #111;
+  color: #fff;
+}
+
+.characters2 {
+  padding: 2px 80px;
+  background: #111;
+  color: #fff;
+}
+
+.characters1 h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 6px solid #f5c518; /* IMDb yellow vibe */
+  padding-left: 12px;
+}
+
+.characters2 h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 6px solid #f5c518; /* IMDb yellow vibe */
+  padding-left: 12px;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.character-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* .character-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+} */
+
+.character-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.character-card h3 {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: #f5c518;
+}
+
+.character-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+/* HOVER SWAP */
+.img-swap {
+  position: relative;
+  height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.img-swap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .25s ease;
+}
+.img-swap .img-hover { opacity: 0; }
+.character-card:hover .img-swap .img-hover { opacity: 1; }
+.character-card:hover .img-swap .img-base  { opacity: 0; }
+
