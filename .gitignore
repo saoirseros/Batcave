@@ -1,5 +1,4 @@
 # Ignore big video files
-*.mp4
 *.avi
 *.mov
 *.mkv
@@ -8,9 +7,6 @@
 batcave/font-awesome-4.7.0/
 
 # Ignore large images
-*.png
-*.jpg
-*.jpeg
 *.gif
 
 # Ignore zip or backup files
