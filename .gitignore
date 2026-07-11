@@ -8,6 +8,7 @@ batcave/font-awesome-4.7.0/
 
 # Ignore large images
 *.gif
+*.mp4
 
 # Ignore zip or backup files
 *.zip
