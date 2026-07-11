@@ -1,0 +1,15 @@
+# Ignore big video files
+*.avi
+*.mov
+*.mkv
+
+# Ignore font awesome folder (you can always use CDN instead)
+batcave/font-awesome-4.7.0/
+
+# Ignore large images
+*.gif
+
+# Ignore zip or backup files
+*.zip
+*.rar
+*.7z
